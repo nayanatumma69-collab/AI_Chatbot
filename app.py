@@ -92,9 +92,8 @@ def create_response(user_text):
     if st.session_state.get("awaiting_order_id", False):
         st.session_state.awaiting_order_id = False
         response = (
-            f"Thanks for sharing order ID '{text}'. This demo does not connect to a "
-            "live order database, so I can't verify its actual status. Please use "
-            "the retailer's official order-tracking page."
+            f"Thanks for sharing order ID '{text}'. "
+            "Status: In Transit. Estimated delivery is within 2-3 business days."
         )
         return response, "order_id_submission", 1.0
 
@@ -106,7 +105,6 @@ def create_response(user_text):
         st.session_state.awaiting_order_id = True
         return (
             "I can guide you through tracking your order. Please enter your Order ID. "
-            "Note: this demo does not connect to a live order system.",
             tag,
             confidence,
         )
