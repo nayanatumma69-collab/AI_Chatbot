@@ -1,0 +1,144 @@
+{
+  "intents": [
+    {
+      "tag": "greeting",
+      "patterns": [
+        "Hi",
+        "Hello",
+        "Hey there",
+        "Is anyone there?",
+        "Good day",
+        "What's up?"
+      ],
+      "responses": [
+        "Hello! How can I help you today?",
+        "Hi there! What can I do for you?",
+        "Greetings! How may I assist you?"
+      ]
+    },
+    {
+      "tag": "goodbye",
+      "patterns": [
+        "Bye",
+        "See you later",
+        "Goodbye",
+        "Have a good day",
+        "I'm leaving"
+      ],
+      "responses": [
+        "Goodbye! Have a great day ahead.",
+        "Thanks for stopping by, see you soon!",
+        "Take care!"
+      ]
+    },
+    {
+      "tag": "thanks",
+      "patterns": [
+        "Thanks",
+        "Thank you",
+        "That's helpful",
+        "Thanks a lot",
+        "Awesome, thank you"
+      ],
+      "responses": [
+        "Happy to help!",
+        "Anytime! Let me know if you need anything else.",
+        "You're very welcome!"
+      ]
+    },
+    {
+      "tag": "hours",
+      "patterns": [
+        "What are your hours?",
+        "When are you open?",
+        "Store timing",
+        "Working hours",
+        "Are you open on weekends?"
+      ],
+      "responses": [
+        "We are open Monday to Saturday from 9:00 AM to 8:00 PM.",
+        "Our working hours are Mon–Sat, 9 AM – 8 PM."
+      ]
+    },
+    {
+      "tag": "track_order",
+      "patterns": [
+        "Where is my order?",
+        "Track my package",
+        "Order status",
+        "How can I track my delivery?",
+        "Where is my shipment?"
+      ],
+      "responses": [
+        "You can track your order using the tracking ID sent to your email, or visit our 'Track Order' page.",
+        "Please share your Order ID so we can verify the status."
+      ]
+    },
+    {
+      "tag": "returns_refunds",
+      "patterns": [
+        "What is your return policy?",
+        "I want a refund",
+        "Can I return an item?",
+        "How do returns work?",
+        "Exchange policy"
+      ],
+      "responses": [
+        "We offer a 30-day hassle-free return window for all unopened or defective items.",
+        "Returns can be initiated in your account dashboard under 'My Orders'."
+      ]
+    },
+    {
+      "tag": "payments",
+      "patterns": [
+        "What payment methods do you accept?",
+        "Can I pay with credit card?",
+        "Do you take PayPal or UPI?",
+        "Payment options"
+      ],
+      "responses": [
+        "We accept Visa, MasterCard, PayPal, Apple Pay, and major UPI/net-banking options.",
+        "All major credit cards, debit cards, and UPI options are supported."
+      ]
+    },
+    {
+      "tag": "shipping_info",
+      "patterns": [
+        "Do you offer international shipping?",
+        "How long does delivery take?",
+        "Shipping rates",
+        "Do you deliver to my city?"
+      ],
+      "responses": [
+        "Standard domestic shipping takes 3-5 business days. International shipping takes 7-12 business days.",
+        "Shipping is free on orders over $50!"
+      ]
+    },
+    {
+      "tag": "discounts",
+      "patterns": [
+        "Are there any discounts?",
+        "Do you have promo codes?",
+        "Any sales going on?",
+        "Coupon code"
+      ],
+      "responses": [
+        "Use code 'WELCOME10' to get 10% off your first purchase!",
+        "Check our 'Deals' page for current seasonal offers."
+      ]
+    },
+    {
+      "tag": "human_support",
+      "patterns": [
+        "Can I talk to a real person?",
+        "Connect me to an agent",
+        "Customer care representative",
+        "I need human support"
+      ],
+      "responses": [
+        "Connecting you to a human agent... Please hold on or email support@example.com.",
+        "You can reach our live support team at 1-800-555-0199."
+      ]
+    }
+  ]
+}
