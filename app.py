@@ -54,7 +54,7 @@ def load_intent_model():
     return vectorizer, classifier, responses, data["intents"]
 
 vectorizer, classifier, responses_map, intents = load_intent_model()
-CONFIDENCE_THRESHOLD = 0.7
+CONFIDENCE_THRESHOLD = 0.10
 
 def predict_intent(user_text):
     """Return the predicted intent and confidence, or None for unknown text."""
