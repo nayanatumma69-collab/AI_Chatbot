@@ -121,7 +121,7 @@ def log_exchange(user_text, bot_text, tag, confidence):
     })
 
 st.title("💬 AI Customer Support Chatbot")
-st.caption("NLTK tokenization · TF-IDF · Logistic Regression · Streamlit")
+#st.caption("NLTK tokenization · TF-IDF · Logistic Regression · Streamlit")
 st.write(
     "Ask about store hours, order tracking, returns and refunds, payment methods, "
     "shipping, discounts, or human support."
