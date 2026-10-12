@@ -104,7 +104,7 @@ def create_response(user_text):
     if tag == "track_order":
         st.session_state.awaiting_order_id = True
         return (
-            "I can guide you through tracking your order. Please enter your Order ID. "
+            "I can guide you through tracking your order. Please enter your Order ID. ",
             tag,
             confidence,
         )
