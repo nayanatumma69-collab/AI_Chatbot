@@ -58,7 +58,9 @@ Bash
 streamlit run app.py
 
 The application will launch locally in your default web browser at http://localhost:8501.
+
 🌐 Live Application
 
 Access the hosted deployment directly in your browser:
+
 👉 Open AI Chatbot
