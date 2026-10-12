@@ -1,39 +1,64 @@
-# AI Customer Support Chatbot
+🤖 AI Chatbot (Rule-Based & Regex Pattern Matching)
 
-A Streamlit web chatbot based on the intent dataset from the original `AI_Chatbot.ipynb` notebook.
+A responsive conversational AI chatbot built with Python and regular expressions (re) designed to understand user intents, handle common conversational workflows, and deliver structured, context-aware responses without external API latency.
 
-## Features
-- 10 predefined customer-support intents loaded from `intents.json`
-- NLTK tokenization
-- TF-IDF features and Logistic Regression intent classification
-- Confidence threshold and fallback responses
-- Basic multi-turn order-ID prompt
-- Session conversation history with JSON download
-- Streamlit chat interface
+🔗 Live Streamlit Demo: aichatbot-erul3czvrg3yj9ozedwtno.streamlit.app
+💡 How the Project Works
 
-## Important demo limitation
-The order-tracking flow does **not** connect to a real order database. Store hours, policies, discounts, and support contact details are sample responses and should be replaced with verified business information before real use.
+    Input Normalization & Preprocessing:
 
-## Run locally
-```bash
-python -m venv .venv
-# Windows: .venv\Scripts\activate
-# macOS/Linux: source .venv/bin/activate
-pip install -r requirements.txt
+        User inputs are normalized by stripping leading/trailing whitespace, converting text to lowercase, and handling basic punctuation to ensure uniform pattern evaluation.
+
+    Regex Intent Matching & Pattern Extraction:
+
+        The conversational engine utilizes compiled regular expressions (re.search and re.findall) with word boundaries (\b) to match user intents against predefined categories (e.g., greetings, inquiries, FAQs, technical support, and farewells).
+
+        Extracts dynamic parameters and entities (such as names, dates, or keywords) from natural language inputs to personalize replies.
+
+    Fallback & Graceful Error Handling:
+
+        When user queries fall outside recognized rule patterns, the bot activates conversational fallback strategies to prompt clarifications without crashing or halting dialogue.
+
+    Interactive Chat Interface:
+
+        Implemented via Streamlit, providing real-time multi-turn conversational history management using st.session_state and conversational chat bubbles.
+
+🛠️ Technology Stack
+
+    Core Language: Python 3.x
+
+    Pattern Matching & NLP Logic: Python standard library re (Regular Expressions)
+
+    Web Interface: Streamlit (st.chat_message, st.chat_input, st.session_state)
+
+🚀 How to Run the Project Locally
+1. Clone the Repository
+Bash
+
+git clone <YOUR_REPOSITORY_URL>
+cd AI_Chatbot
+
+2. Set Up a Virtual Environment (Recommended)
+Bash
+
+python -m venv venv
+# On Windows:
+venv\Scripts\activate
+# On macOS/Linux:
+source venv/bin/activate
+
+3. Install Dependencies
+Bash
+
+pip install streamlit
+
+4. Run the Streamlit Application
+Bash
+
 streamlit run app.py
-```
 
-## Deploy for free
-1. Create a GitHub repository named `ai-customer-support-chatbot`.
-2. Upload `app.py`, `intents.json`, `requirements.txt`, `README.md`, and `.gitignore` to the repository root.
-3. Open https://share.streamlit.io and sign in with GitHub.
-4. Choose **Create app**, select the repository and `main` branch, and set the app file path to `app.py`.
-5. Click **Deploy**.
+The application will launch locally in your default web browser at http://localhost:8501.
+🌐 Live Application
 
-The original notebook is preserved in `notebooks/` for reference. Streamlit Community Cloud runs `app.py`, not the notebook.
-
-## Project structure
-- `app.py` — Streamlit UI and classifier
-- `intents.json` — training utterances and responses
-- `requirements.txt` — Python dependencies
-- `notebooks/AI_Chatbot.ipynb` — original Colab notebook
+Access the hosted deployment directly in your browser:
+👉 Open AI Chatbot
