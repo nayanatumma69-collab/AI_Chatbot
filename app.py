@@ -133,7 +133,7 @@ with st.sidebar:
     st.write("The intent model is trained when the app starts.")
     st.warning(
         "This is a demonstration. Store policies, contact details, and tracking "
-        "responses are sample data, not verified live business information."
+        "responses are sample data."
     )
     if st.button("Clear chat"):
         st.session_state.messages = []
